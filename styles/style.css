@@ -1,0 +1,331 @@
+/* SITE DEFAULTS */
+:root {
+  --text: rgba(255, 255, 255, 1);
+  --black: rgba(0, 0, 0, 1);
+  --gray: rgba(220, 220, 220, 1);
+  --lightFont: 300;
+  --regularFont: 400;
+  --boldFont: 700;
+}
+
+@font-face {
+  font-family: "customFont";
+  src: url(/fonts/GROBOLD.ttf);
+}
+
+* {
+  font-family: "Roboto Flex", "Roboto Serif";
+  margin: 0;
+  padding: 0;
+  color: var(--text);
+}
+
+body {
+  background-image: linear-gradient(
+    to bottom,
+    var(--black) 0%,
+    var(--black) 20%,
+    darkgray 50%,
+    var(--black) 70%,
+    var(--black) 100%
+  );
+}
+
+/* NAVIGATION AND HEADER */
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navLogo img {
+  padding: 20px;
+  max-width: 300px;
+}
+
+.navMenu {
+  padding: 30px;
+}
+
+/* MAIN AND SECTIONS */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  min-width: 100%;
+}
+
+.indexWindow {
+  /* height: 80vh; */
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 50px 50px;
+  width: 100%;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: center;
+  /* width: calc(100%); */
+  background-color: var(--black);
+  text-align: center;
+  text-transform: uppercase;
+  margin: 70px 0px;
+  padding: 20px 0px;
+}
+
+.sectionHeader h1 {
+  font-family: "customFont", sans-serif;
+  letter-spacing: 8px;
+}
+
+.caHeader {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-transform: capitalize;
+  margin-top: 40px;
+  margin-bottom: -20px;
+  text-align: center;
+}
+
+.caHeader h2 {
+  text-align: center;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: auto;
+  gap: 4rem;
+}
+
+.intro p {
+  max-width: 380px;
+  margin-bottom: 70px;
+}
+
+.cta {
+  color: var(--black);
+  background-color: var(--text);
+  display: block;
+  padding: 10px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  box-shadow: 0px 0px 25px red;
+  margin: auto;
+}
+
+.cta:hover {
+  box-shadow: 0px 0px 25px greenyellow;
+}
+
+.logoImgRack {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  max-width: 400px;
+  margin: 160px auto -50px auto;
+}
+
+.logoImgRack img {
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+}
+
+.projectContainer {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: auto;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px;
+}
+
+.projectContainer div {
+  justify-content: center;
+  flex: 1;
+  flex-wrap: wrap;
+  min-width: 300px;
+}
+
+.projectContainer div img {
+  width: 100%;
+}
+
+.spookyBanner {
+  display: flex;
+  justify-content: center;
+  max-width: 900px;
+  opacity: 20%;
+  margin: auto;
+  margin-bottom: -175px;
+}
+
+.spookyBanner img {
+  width: 100%;
+}
+
+.projectLinks li {
+  padding: 10px;
+}
+
+a {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+/* FOOTER, ABOUT AND CONTACT */
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.footerMainCont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.selfie {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: auto;
+  gap: 50px;
+}
+
+.selfie div {
+  flex: 1;
+  min-width: 300px;
+}
+
+.selfieBottomText {
+  max-width: 900px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.formContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  gap: 50px;
+  padding: 50px;
+}
+
+.contactTextCont {
+  text-align: left;
+  max-width: 460px;
+}
+
+.contactFormCont {
+  max-width: 450px;
+  flex: 1;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-start;
+  min-width: 450px;
+  text-align: left;
+}
+
+.form input {
+  font-size: 1.2rem;
+  color: var(--black);
+  text-indent: 10px;
+  margin-bottom: 20px;
+  height: 40px;
+}
+
+.form textarea {
+  font-size: 1.2rem;
+  color: var(--black);
+  text-indent: 10px;
+  /* max-width: 380px; */
+  font-family: "roboto flex";
+}
+
+.form input::placeholder {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.form textarea::placeholder {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.buttonWrapper {
+  display: flex;
+  /* max-width: 380px; */
+  margin-top: 20px;
+}
+
+.formCta {
+  color: var(--black);
+  background-color: var(--text);
+  justify-self: right;
+  margin-left: auto;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border: none;
+  box-shadow: 0px 0px 25px red;
+}
+
+.formCta:hover {
+  box-shadow: 0px 0px 25px greenyellow;
+}
+
+.thankYouForm {
+  position: absolute;
+  max-width: 500px;
+  max-height: 500px;
+  margin: 100px auto;
+  padding: 5rem;
+  color: var(--black);
+  background-image: linear-gradient(
+    var(--black),
+    var(--gray) 50%,
+    var(--black)
+  );
+  /* box-shadow: 5px 5px 15px 5px lightgreen; */
+  transition: 0.3s ease-in-out;
+}
+
+.thankYouForm div p,
+.thankYouForm div h2 {
+  line-height: 3rem;
+  text-shadow: 1px 1px 5px var(--black);
+}
+
+.dialogPara {
+  font-size: 2rem;
+  font-family: "grobold";
+  letter-spacing: 3px;
+}
+
+.spookyLogo {
+  bottom: 0;
+  margin-top: 50px;
+  margin-bottom: 0;
+}

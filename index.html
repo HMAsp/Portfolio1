@@ -8,13 +8,350 @@
       name="desctiption"
       content="Welcome to my portfolio! My name is Hans and this website will showcase some skills I have accuired during my first year as a Front-End Delvelopment student."
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@300;400;700&family=Roboto+Serif:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <script src="/js/index.js" type="module"></script>
     <title>CodeWithSpooks</title>
   </head>
   <body>
     <header>
-      <nav></nav>
+      <nav>
+        <div class="navLogo">
+          <img src="/images/spookyBanner.png" alt="Spookyrumble text logo" />
+        </div>
+        <div class="navMenu">BURRGER</div>
+      </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <section class="indexWindow">
+        <div class="sectionHeader">
+          <h1>What is this?</h1>
+        </div>
+        <div class="intro">
+          <div>
+            <img
+              src="/images/avatar_sefie.png"
+              alt="avatar selfie of creator"
+            />
+          </div>
+          <div>
+            <p>
+              My Portfolio!<br />
+              Hello there! I'm Hans. <br />I embarked on an exciting journey of
+              learning and creativity at the age of 40. With this website I
+              intend to give you a little insight to who I am and show you some
+              of the work I have done over my first year as a front-end
+              development student.
+            </p>
+            <button class="cta">portfolio</button>
+          </div>
+        </div>
+        <div class="logoImgRack">
+          <img
+            src="/images/Group10_logoBigHor.png"
+            alt="rack of logos showing HTML, CSS, JS and Figma logos"
+          />
+        </div>
+      </section>
+      <section class="portfolio">
+        <div class="sectionHeader">
+          <h1>portfolio</h1>
+        </div>
+        <h2 class="caHeader">Rainydays ecommerce | Cross-course assignment</h2>
+        <div class="projectContainer">
+          <div>
+            <img
+              src="/images/rainydayImg.png"
+              alt="picture showing rainydays index page"
+            />
+            <div class="projectLinks">
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/HMAsp/HTML-CSS_CA_HMA_2022"
+                  >view Github repo</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://chic-lollipop-939ca8.netlify.app"
+                  >visit website on netlify</a
+                >
+              </li>
+            </div>
+          </div>
+          <div>
+            <p>
+              The cross course assignment is my first ever design and
+              introduction to HTML and CSS. This project opened my eyes to many
+              things regarding WCAG and SEO that I had never learned about until
+              we started this learning trip. It started as a pure design
+              assignment. After that we had to develop our designs using vanilla
+              HTML and CSS and in the second semester when we started learning
+              Javascript, this site was rewritten to fetch its products via an
+              API. For the API we used wordpress and we set this up ourselves to
+              become an ecommerce build.
+            </p>
+          </div>
+        </div>
+        <h2 class="caHeader">Community science museum | semester project</h2>
+        <div class="projectContainer">
+          <div>
+            <img
+              src="/images/csmImg.png"
+              alt="picture showing csm index page"
+            />
+            <div class="projectLinks">
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/HMAsp/2022-12-16_semester_project1_HMAsp"
+                  >view Github repo</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="https://2022aug-sp1-hma.netlify.app"
+                  >visit website on netlify</a
+                >
+              </li>
+            </div>
+          </div>
+          <div>
+            <p>
+              This would be my semester project. This project put together all
+              the things we learned throughout our first semester. It is more
+              word and text oriented so it was a challenge as the first one we
+              made was mostly images and therefore easier to work with in a way.
+              The design is mine and even though I am a very dark theme biased
+              person I want to make this a bit more bright and vibrant because
+              the target age group was 7-15. This project is also designed and
+              developed using Figma, HTML & CSS.
+            </p>
+          </div>
+        </div>
+        <h2 class="caHeader">Beer recipes | JS1 assignment</h2>
+        <div class="projectContainer">
+          <div>
+            <img
+              src="/images/beerImg.png"
+              alt="picture showing beer recipe index page"
+            />
+            <div class="projectLinks">
+              <li>
+                <a target="_blank" href="https://github.com/HMAsp/hma_js1_ca"
+                  >view Github repo</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://soft-basbousa-03b99f.netlify.app"
+                  >visit website on netlify</a
+                >
+              </li>
+            </div>
+          </div>
+          <div>
+            <p>
+              The second semester started with a bang and we were thrown in to
+              the world of Javascript. This assignment shows my first time ever
+              working with JS. The task was to create a simple site and showcase
+              that we could handle API data. Product list and a dynamically
+              generated detail page.
+            </p>
+          </div>
+        </div>
+        <h2 class="caHeader">Inside the trip | project exam</h2>
+        <div class="projectContainer">
+          <div>
+            <img
+              src="/images/ittIng.png"
+              alt="picture showing Inside the trip index page"
+            />
+            <div class="projectLinks">
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/Noroff-FEU-Assignments/project-exam-1-HMAsp"
+                  >view Github repo</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://friendly-moonbeam-149a6a.netlify.app"
+                  >visit website on netlify</a
+                >
+              </li>
+            </div>
+          </div>
+          <div>
+            <p>
+              To conclude our first year journey we had the project exam. This
+              travelblog binds it all together and showcases my acquired skills
+              in design, development and programming. This project had us create
+              a blog. We could use whatever content we wanted to create but it
+              had some criteria we had to accommodate and some challenges we had
+              to overcome on our own like for example the comment section and
+              the contact form post. We have had nothing about POST during this
+              year so this was a challenge I am proud to say I solved. I also
+              had a personal side goal to make this site fully scalable without
+              a single line of media queries and I achieved that. My design on
+              this project is fully scalable down to 320px and however big we
+              want to go. I am working on a ultra wide monitor so that is what I
+              used for testing.
+            </p>
+          </div>
+        </div>
+        <div class="spookyBanner">
+          <img
+            src="images/spookyBanner.png"
+            alt="spookyrumble text logo (dimmed)"
+          />
+        </div>
+      </section>
+      <section class="aboutMe">
+        <div class="sectionHeader">
+          <h1>About me</h1>
+        </div>
+        <div class="selfie">
+          <div>
+            <img
+              src="/images/selfieWithMax.png"
+              alt="selfie of creator with his dog staring at him"
+            />
+          </div>
+          <div>
+            <p>
+              Hi Again! Like I started out saying, my name is Hans or in some
+              circles more commonly known as Spookyrumble. I have been a gamer
+              most of my life so as you probably guessed, Spookyrumble is my
+              gamer-name going back to since the release of the XBox 360 when I
+              started playing FPS games and I needed a tag. I occatiionally
+              stream on Twitch under the same name and I am a part of many
+              communities all over the world.
+            </p>
+            <p>
+              Personally I am a very calm and collected person. I work on a very
+              logical (to me) state and I guess you can call me an observer and
+              thinker more than a talker/speaker. I prefer to not take up to
+              much space in a room but I will voice up if I feel the need and
+              that is usually if I think someone could need help in some way.
+            </p>
+            <p>
+              Personally I am a very calm and collected person. I work on a very
+              logical (to me) state and I guess you can call me an observer and
+              thinker more than a talker/speaker. I prefer to not take up to
+              much space in a room but I will voice up if I feel the need and
+              that is usually if I think someone could need help in some way.
+            </p>
+          </div>
+        </div>
+        <div class="selfieBottomText">
+          <p>
+            After having worked more or less in the car industry since 2003 with
+            everything from the floor as a mechanic and car detailer to the
+            parts department but mostly in the customer service department I
+            found myself wanting to pursuing a dream of doing something I found
+            very interesting and fun. Like I said before, I have always been a
+            gamer and very much interested in tech I wanted to go the IT way and
+            started researching what branch I thought would suit me best. The
+            choice landed on Front-End Development because it speaks to my
+            natural qualities. I very much enjoy creating, troubleshooting and
+            just making things work. I am one of those kids who picked apart my
+            night stand radio just to see what it looked like inside. I am
+            absolutely loving learning about development and working on these
+            projects figuring out how to do what I want to do is so much fun and
+            I feel like this is the perfect match for me. I’m only sorry I
+            didn’t start this sooner but while this waited I have had a long
+            good life this far. Full of experience and my three wonderful
+            daughters and my wife. May the rest of it be filled with awesome
+            projects and creative people to work with!
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="sectionHeader">
+        <h1>Contact</h1>
+      </div>
+      <div class="footerMainCont">
+        <div class="formContainer">
+          <div class="contactTextCont">
+            <p>
+              If you want to reach out to me for any reason. Please use the
+              information in the contact form.
+            </p>
+            <br />
+            <p>I am very much looking forward to hearing from you.</p>
+          </div>
+          <div class="contactFormCont">
+            <dialog class="thankYouForm">
+              <div>
+                <h2 id="dialogHeader">Your message has been sent!</h2>
+                <p id="dialogText">
+                  <span class="dialogPara"> Thank you! </span>
+                  <br />
+                  I will get back to you as soon as possible!
+                </p>
+              </div>
+            </dialog>
+            <form class="form" action="#">
+              <label for="name">Your name</label>
+              <input
+                id="name"
+                type="text"
+                name="your-name"
+                placeholder="Full Name"
+                autocomplete:name
+                required
+              />
+              <label for="email">Your email</label>
+              <input
+                id="email"
+                type="text"
+                name="your-email"
+                placeholder="Valid Email address"
+                autocomplete:email
+                required
+              />
+              <label for="subj">A subject</label>
+              <input
+                id="subj"
+                type="text"
+                name="your-subject"
+                placeholder="Pleace write a subject"
+                required
+              />
+              <label for="message">Your message</label>
+              <textarea
+                id="message"
+                name="your-message"
+                cols="30"
+                rows="10"
+                placeholder="Please write your message"
+                required
+              ></textarea>
+              <div class="buttonWrapper">
+                <button type="submit" class="formCta">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img
+          class="spookyLogo"
+          src="/images/spookyJasonLogo.png"
+          alt="Spookyrumble baby jason logo"
+        />
+      </div>
+    </footer>
   </body>
 </html>
