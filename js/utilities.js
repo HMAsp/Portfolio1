@@ -100,15 +100,25 @@ export { postFormData };
 function showSuccessDialog() {
   const dialog = document.querySelector(".thankYouForm");
   const btn = document.querySelector(".formCta");
-  const form = document.getElementsByTagName("input");
 
   dialog.style.display = "flex";
   document.addEventListener("click", function (event) {
     if (!btn.contains(event.target) && !dialog.contains(event.target)) {
       dialog.style.display = "none";
       btn.style.boxShadow = "0px 0px 25px red";
-      //   form.innerText = "";
+      clearFormInputs();
     }
   });
 }
 export { showSuccessDialog };
+
+// CLEAR FORM INPUTS
+function clearFormInputs() {
+  const form = document.querySelector("form");
+  const elements = form.elements;
+
+  for (let i = 0; i < elements.length; i++) {
+    const element = elements[i];
+    element.value = "";
+  }
+}
