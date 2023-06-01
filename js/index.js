@@ -38,25 +38,17 @@ toTop.addEventListener("click", function () {
   dialogMenu.classList.toggle("hide");
 });
 
-// NAV MENU HANDLER.
+// NAV MENU HANDLER
 const dialogMenu = document.querySelector("#navMenu");
 const menuBtn = document.querySelector("#spookyMenuBtn");
 menuBtn.addEventListener("click", function () {
-  if (!dialogMenu.classList.contains("hide")) {
-    dialogMenu.classList.add("show");
-  } else {
-    dialogMenu.classList.remove("show");
-    dialogMenu.classList.add("hide");
-  }
+  dialogMenu.classList.toggle("show");
+  dialogMenu.classList.toggle("hide");
 });
 
 // CLOSE NAV MENU ON OFF-CLICK
 document.addEventListener("click", function (event) {
-  if (
-    !dialogMenu.contains(event.target) &&
-    !menuBtn.contains(event.target) &&
-    dialogMenu.classList.contains("show")
-  ) {
+  if (!dialogMenu.contains(event.target) && !menuBtn.contains(event.target)) {
     dialogMenu.classList.remove("show");
     dialogMenu.classList.add("hide");
   }
