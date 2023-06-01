@@ -90,8 +90,9 @@ section {
   background-color: var(--black);
   text-align: center;
   text-transform: uppercase;
-  /* margin: 70px 0px; */
-  padding: 20px 0px;
+  margin: 10px 0px 50px 0px;
+  padding: 20px 0;
+  border-radius: 60%;
 }
 
 .sectionHeader h1 {
@@ -192,7 +193,6 @@ section {
   max-width: 900px;
   opacity: 20%;
   margin: auto;
-  margin-bottom: -175px;
 }
 
 .spookyBanner img {
@@ -214,7 +214,7 @@ footer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: auto;
+  margin-top: 150px;
 }
 
 .footerMainCont {
