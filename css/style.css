@@ -373,6 +373,7 @@ footer {
   margin-top: 50px;
   margin-bottom: 0;
   width: 120px;
+  opacity: 0.8;
 }
 
 .spookyLogo:hover {
