@@ -50,6 +50,7 @@ function formErrorHander(event) {
 }
 export { formErrorHander };
 
+// VALIDATES FORM
 function validateForm() {
   if (
     checkLength(nameInput.value, 3) &&

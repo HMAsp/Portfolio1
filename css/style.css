@@ -41,10 +41,84 @@ nav {
 
 .navLogo img {
   max-width: 200px;
+  position: fixed;
+  cursor: pointer;
 }
 
-.navMenu {
-  padding: 30px;
+.dialog {
+  opacity: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  height: 320px;
+  border: 0;
+  border-radius: 100%;
+  background-color: black;
+  box-shadow: 0px 0px 200px red, 0px 0px 30px orange, inset 0px 0px 30px gray;
+  animation: scale 0.4s ease-out;
+}
+
+.navBtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 30px;
+  animation: scale 0.4s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+  display: flex;
+  animation: scale 0.4s ease-out;
+}
+
+.hide {
+  opacity: 0;
+  display: flex;
+  scale: 0;
+  animation: scaledown 0.4s ease-in-out;
+}
+
+@keyframes scale {
+  0% {
+    opacity: 0;
+    scale: 0;
+    top: 0;
+    left: 0;
+  }
+  50% {
+    opacity: 0.25;
+    scale: 0.25;
+    top: 0;
+    left: 0;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes scaledown {
+  0% {
+    opacity: 1;
+    scale: 1;
+  }
+  50% {
+    opacity: 0.25;
+    scale: 0.25;
+    top: 0;
+    left: 0;
+  }
+  100% {
+    opacity: 1;
+    scale: 0;
+    top: 0;
+    left: 0;
+  }
 }
 
 /* MAIN AND SECTIONS */
@@ -249,7 +323,7 @@ footer {
 }
 
 .selfiePara {
-  line-height: 1.3rem;
+  line-height: 1.4rem;
 }
 
 .selfieBottomText {
@@ -371,7 +445,7 @@ footer {
   bottom: 0;
   margin-top: 50px;
   margin-bottom: 0;
-  width: 120px;
+  width: 80px;
 }
 
 .spookyLogo:hover {
