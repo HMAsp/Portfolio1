@@ -65,7 +65,6 @@ section {
   flex-direction: column;
   flex-wrap: wrap;
   margin: auto;
-  /* padding: 50px 0px; */
   width: 100%;
 }
 
@@ -76,7 +75,6 @@ section {
   text-align: center;
   text-transform: uppercase;
   padding: 20px 0px;
-  /* margin-bottom: -300px; */
 }
 
 .indexHeader h1 {
@@ -157,7 +155,6 @@ section {
 .logoImgRack img {
   width: 100%;
   margin: auto;
-  /* padding: 20px; */
 }
 
 /* PORTFOLIO */
@@ -197,6 +194,7 @@ section {
 
 .spookyBanner img {
   width: 100%;
+  margin-bottom: -10px;
 }
 
 .projectLinks li {
@@ -224,6 +222,7 @@ footer {
   width: 100%;
 }
 
+/* ABOUT */
 .selfie {
   display: flex;
   flex-wrap: wrap;
@@ -247,6 +246,7 @@ footer {
   margin-top: 30px;
 }
 
+/* CONTACT */
 .formContainer {
   display: flex;
   flex-wrap: wrap;
@@ -287,7 +287,6 @@ footer {
   font-size: 1.2rem;
   color: var(--black);
   text-indent: 10px;
-  /* max-width: 380px; */
   font-family: "roboto flex";
 }
 
@@ -303,7 +302,6 @@ footer {
 
 .buttonWrapper {
   display: flex;
-  /* max-width: 380px; */
   margin-top: 20px;
 }
 
@@ -334,8 +332,7 @@ footer {
     var(--gray) 50%,
     var(--black)
   );
-  /* box-shadow: 5px 5px 15px 5px lightgreen; */
-  transition: 0.3s ease-in-out;
+  transition: fade 0.3s ease-in-out;
 }
 
 .thankYouForm div p,
