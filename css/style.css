@@ -40,9 +40,13 @@ nav {
 }
 
 .navLogo img {
-  max-width: 200px;
+  max-width: 125px;
   position: fixed;
   cursor: pointer;
+}
+
+.navLogo img:hover {
+  filter: brightness(120%);
 }
 
 .dialog {
@@ -443,12 +447,14 @@ footer {
 .spookyLogo {
   position: fixed;
   bottom: 0;
+  right: 0;
   margin-top: 50px;
   margin-bottom: 0;
   width: 80px;
 }
 
 .spookyLogo:hover {
+  filter: brightness(125%);
   cursor: pointer;
   border-top: 2px solid transparent;
   border-radius: 150% 150% 0 0;
@@ -460,12 +466,12 @@ footer {
 
 @keyframes glowing-border {
   0% {
-    box-shadow: inset 0px 10px 0px -10px greenyellow;
+    box-shadow: inset 0px 10px 0px -10px green;
   }
   50% {
-    box-shadow: inset 0px 15px 5px -8px greenyellow;
+    box-shadow: inset 0px 15px 5px -8px green;
   }
   100% {
-    box-shadow: inset 0px 10px 0px -10px greenyellow;
+    box-shadow: inset 0px 10px 0px -10px green;
   }
 }

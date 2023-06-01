@@ -42,8 +42,12 @@ toTop.addEventListener("click", function () {
 const dialogMenu = document.querySelector("#navMenu");
 const menuBtn = document.querySelector("#spookyMenuBtn");
 menuBtn.addEventListener("click", function () {
-  dialogMenu.classList.toggle("show");
-  dialogMenu.classList.toggle("hide");
+  if (!dialogMenu.classList.contains("hide")) {
+    dialogMenu.classList.add("show");
+  } else {
+    dialogMenu.classList.remove("show");
+    dialogMenu.classList.add("hide");
+  }
 });
 
 // CLOSE NAV MENU ON OFF-CLICK
