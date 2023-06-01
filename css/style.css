@@ -381,7 +381,7 @@ footer {
   border-left: unset;
   border-right: unset;
   border-bottom: unset;
-  animation: glowing-border 1.3s ease-in-out infinite;
+  animation: glowing-border 0.6s ease-in-out infinite;
 }
 
 @keyframes glowing-border {
