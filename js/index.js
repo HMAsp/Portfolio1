@@ -46,6 +46,14 @@ menuBtn.addEventListener("click", function () {
   dialogMenu.classList.toggle("hide");
 });
 
+// CLOSE NAV MENU ON OFF-CLICK
+document.addEventListener("click", function (event) {
+  if (!dialogMenu.contains(event.target) && !menuBtn.contains(event.target)) {
+    dialogMenu.classList.remove("show");
+    dialogMenu.classList.add("hide");
+  }
+});
+
 // INDEX BTN HANDLERS
 const indexPortF = document.querySelector("#indexPortF");
 indexPortF.addEventListener("click", function () {
@@ -63,6 +71,12 @@ const IndexContact = document.querySelector("#IndexContact");
 IndexContact.addEventListener("click", function () {
   const contact = document.querySelector(".contact");
   contact.scrollIntoView({ behavior: "smooth" });
+});
+
+const spookyLogoHome = document.querySelector("#spookyScrollHome");
+spookyLogoHome.addEventListener("click", function () {
+  const home = document.querySelector(".indexWindow");
+  home.scrollIntoView({ behavior: "smooth" });
 });
 
 // FORM ERROR AND SUBMIT HANDLER
