@@ -40,7 +40,7 @@ nav {
 }
 
 .navLogo img {
-  max-width: 300px;
+  max-width: 200px;
 }
 
 .navMenu {
@@ -57,7 +57,7 @@ main {
 }
 
 .indexWindow {
-  /* height: 80vh; */
+  height: 100vh;
 }
 
 section {
@@ -65,18 +65,32 @@ section {
   flex-direction: column;
   flex-wrap: wrap;
   margin: auto;
-  padding: 50px 0px;
+  /* padding: 50px 0px; */
   width: 100%;
+}
+
+.indexHeader {
+  display: flex;
+  justify-content: center;
+  background-color: var(--black);
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 0px;
+  /* margin-bottom: -300px; */
+}
+
+.indexHeader h1 {
+  font-family: "customFont", sans-serif;
+  letter-spacing: 8px;
 }
 
 .sectionHeader {
   display: flex;
   justify-content: center;
-  /* width: calc(100%); */
   background-color: var(--black);
   text-align: center;
   text-transform: uppercase;
-  margin: 70px 0px;
+  /* margin: 70px 0px; */
   padding: 20px 0px;
 }
 
@@ -101,11 +115,13 @@ section {
 
 .intro {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   max-width: 900px;
   margin: auto;
-  gap: 4rem;
+  gap: 2rem;
 }
 
 .intro p {
@@ -134,13 +150,18 @@ section {
   width: 100%;
   justify-content: center;
   max-width: 400px;
-  margin: 160px auto -50px auto;
+  margin: 100px auto 100px auto;
 }
 
 .logoImgRack img {
   width: 100%;
   margin: auto;
   /* padding: 20px; */
+}
+
+/* PORTFOLIO */
+.portfolio {
+  margin-top: 350px;
 }
 
 .projectContainer {
@@ -151,6 +172,7 @@ section {
   justify-content: center;
   gap: 30px;
   padding: 50px 0px;
+  margin-bottom: 100px;
 }
 
 .projectContainer div {
