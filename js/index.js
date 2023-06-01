@@ -54,8 +54,15 @@ menuBtn.addEventListener("click", function () {
 // CLOSE NAV MENU ON OFF-CLICK
 document.addEventListener("click", function (event) {
   if (!dialogMenu.contains(event.target) && !menuBtn.contains(event.target)) {
-    dialogMenu.classList.remove("show");
-    dialogMenu.classList.add("hide");
+    if (
+      dialogMenu.classList.contains("dummy") ||
+      dialogMenu.classList.contains("hide")
+    ) {
+      return;
+    } else {
+      dialogMenu.classList.toggle("show");
+      dialogMenu.classList.toggle("hide");
+    }
   }
 });
 
