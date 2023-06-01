@@ -377,7 +377,7 @@ footer {
 .spookyLogo:hover {
   cursor: pointer;
   border-top: 2px solid transparent;
-  border-radius: 50% 50% 0 0;
+  border-radius: 150% 150% 0 0;
   border-left: unset;
   border-right: unset;
   border-bottom: unset;
@@ -386,12 +386,12 @@ footer {
 
 @keyframes glowing-border {
   0% {
-    box-shadow: inset 0px 10px 10px -10px greenyellow;
+    box-shadow: inset 0px 10px 0px -10px greenyellow;
   }
   50% {
-    box-shadow: inset 0px 20px 0px -8px greenyellow;
+    box-shadow: inset 0px 15px 5px -8px greenyellow;
   }
   100% {
-    box-shadow: inset 0px 10px 10px -10px greenyellow;
+    box-shadow: inset 0px 10px 0px -10px greenyellow;
   }
 }
