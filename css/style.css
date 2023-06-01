@@ -126,6 +126,7 @@ section {
 .intro p {
   max-width: 380px;
   margin-bottom: 70px;
+  text-align: center;
 }
 
 .cta {
@@ -142,6 +143,13 @@ section {
 
 .cta:hover {
   box-shadow: 0px 0px 25px greenyellow;
+}
+
+.ctaRack {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .logoImgRack {
@@ -240,6 +248,10 @@ footer {
   width: 100%;
 }
 
+.selfiePara {
+  line-height: 1.3rem;
+}
+
 .selfieBottomText {
   max-width: 900px;
   margin: auto;
@@ -255,6 +267,7 @@ footer {
   margin: auto;
   gap: 50px;
   padding: 50px 0px;
+  margin-bottom: 160px;
 }
 
 .contactTextCont {
@@ -347,8 +360,38 @@ footer {
   letter-spacing: 3px;
 }
 
+.topNav {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .spookyLogo {
+  position: fixed;
   bottom: 0;
   margin-top: 50px;
   margin-bottom: 0;
+}
+
+.spookyLogo:hover {
+  cursor: pointer;
+  border-top: 2px solid transparent;
+  border-radius: 50% 50% 0 0;
+  border-left: unset;
+  border-right: unset;
+  border-bottom: unset;
+  animation: glowing-border 1.3s ease-in-out infinite;
+}
+
+@keyframes glowing-border {
+  0% {
+    box-shadow: inset 0px 10px 10px -10px greenyellow;
+  }
+  50% {
+    box-shadow: inset 0px 20px 0px -8px greenyellow;
+  }
+  100% {
+    box-shadow: inset 0px 10px 10px -10px greenyellow;
+  }
 }

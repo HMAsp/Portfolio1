@@ -1,31 +1,35 @@
-import { checkLength, postFormData } from "./utilities.js";
-import { validateEmail } from "./utilities.js";
+import { postFormData } from "./utilities.js";
 import { showSuccessDialog } from "./utilities.js";
 import { formErrorHander } from "./utilities.js";
 import { validateForm } from "./utilities.js";
 formErrorHander();
 validateForm();
 
-const scrollBtn = document.querySelector(".cta");
-scrollBtn.addEventListener("click", function () {
+const scrollPort = document.querySelector("#portF");
+scrollPort.addEventListener("click", function () {
   const portfolio = document.querySelector(".portfolio");
   portfolio.scrollIntoView({ behavior: "smooth" });
 });
 
-const form = document.querySelector(".form");
-const nameInput = document.querySelector("#name");
-const emailInput = document.querySelector("#email");
-const subjInput = document.querySelector("#subj");
-const messageInput = document.querySelector("#message");
-const formBtn = document.querySelector(".formCta");
+const about = document.querySelector("#about");
+about.addEventListener("click", function () {
+  const about = document.querySelector(".spookyBanner");
+  about.scrollIntoView({ behavior: "smooth" });
+});
 
-// formBtn.addEventListener("submit", function () {
-//   if (formValidator()) {
-//     // event.preventDefault();
-//     showSuccessDialog();
-//     // postFormData();
-//   }
-// });
+const contact = document.querySelector("#contact");
+contact.addEventListener("click", function () {
+  const contact = document.querySelector(".contact");
+  contact.scrollIntoView({ behavior: "smooth" });
+});
+
+const toTop = document.querySelector("#spookyScrollTop");
+toTop.addEventListener("click", function () {
+  const home = document.querySelector(".indexWindow");
+  home.scrollIntoView({ behavior: "smooth" });
+});
+
+const form = document.querySelector(".form");
 
 form.addEventListener("submit", function (event) {
   event.preventDefault();
