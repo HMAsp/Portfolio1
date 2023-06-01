@@ -38,7 +38,7 @@ toTop.addEventListener("click", function () {
   dialogMenu.classList.toggle("hide");
 });
 
-// NAV MENU HANDLER
+// NAV MENU HANDLER.
 const dialogMenu = document.querySelector("#navMenu");
 const menuBtn = document.querySelector("#spookyMenuBtn");
 menuBtn.addEventListener("click", function () {
@@ -52,7 +52,11 @@ menuBtn.addEventListener("click", function () {
 
 // CLOSE NAV MENU ON OFF-CLICK
 document.addEventListener("click", function (event) {
-  if (!dialogMenu.contains(event.target) && !menuBtn.contains(event.target)) {
+  if (
+    !dialogMenu.contains(event.target) &&
+    !menuBtn.contains(event.target) &&
+    dialogMenu.classList.contains("show")
+  ) {
     dialogMenu.classList.remove("show");
     dialogMenu.classList.add("hide");
   }
