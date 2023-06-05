@@ -48,7 +48,7 @@ nav {
 }
 
 .navLogo img:hover {
-  filter: brightness(120%);
+  filter: brightness(125%);
 }
 
 .dialog {
@@ -178,6 +178,7 @@ section {
 .sectionHeader h1 {
   font-family: "customFont", sans-serif;
   letter-spacing: 8px;
+  margin: 30px;
 }
 
 .caHeader {
@@ -440,6 +441,7 @@ footer {
 .thankYouForm div h2 {
   line-height: 3rem;
   text-shadow: 1px 1px 5px var(--black);
+  text-align: center;
 }
 
 .dialogPara {
