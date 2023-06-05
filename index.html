@@ -322,12 +322,12 @@
                 </p>
               </div>
             </dialog>
-            <form id="form" class="form" action="#">
+            <form id="form" class="form" action="submit">
               <label for="name">Your name</label>
               <input
+                name="your-name"
                 id="name"
                 type="text"
-                name="your-name"
                 placeholder="Full Name"
                 autocomplete:name
                 required
@@ -359,7 +359,7 @@
                 required
               ></textarea>
               <div class="buttonWrapper">
-                <button type="submit" class="formCta">Send</button>
+                <button type="submit" id="formBtn" class="formCta">Send</button>
               </div>
             </form>
           </div>

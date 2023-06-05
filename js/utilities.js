@@ -13,7 +13,6 @@ const nameInput = document.querySelector("#name");
 const emailInput = document.querySelector("#email");
 const subjInput = document.querySelector("#subj");
 const messageInput = document.querySelector("#message");
-const formBtn = document.querySelector(".formCta");
 
 function formErrorHander(event) {
   nameInput.addEventListener("input", function () {

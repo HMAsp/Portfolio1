@@ -98,6 +98,16 @@ form.addEventListener("submit", function (event) {
   event.preventDefault();
   if (validateForm()) {
     showSuccessDialog();
-    postFormData();
+    postFormData(form);
+  }
+});
+
+// BTN CONFIRMATION SHADOW HANDLER
+form.addEventListener("input", function () {
+  const sendBtn = document.querySelector("#formBtn");
+  if (validateForm()) {
+    sendBtn.style.boxShadow = "0px 0px 25px yellowgreen";
+  } else {
+    sendBtn.style.boxShadow = "0px 0px 25px 5px var(--spookyRed)";
   }
 });
