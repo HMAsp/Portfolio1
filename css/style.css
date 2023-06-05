@@ -3,6 +3,7 @@
   --text: rgba(255, 255, 255, 1);
   --black: rgba(0, 0, 0, 1);
   --gray: rgba(220, 220, 220, 1);
+  --spookyRed: rgba(104, 2, 2, 1);
   --lightFont: 300;
   --regularFont: 400;
   --boldFont: 700;
@@ -473,12 +474,12 @@ footer {
 
 @keyframes glowing-border {
   0% {
-    box-shadow: inset 0px 10px 0px -10px green;
+    box-shadow: inset 0px 10px 0px -10px var(--spookyRed);
   }
   50% {
-    box-shadow: inset 0px 15px 5px -8px green;
+    box-shadow: inset 0px 15px 5px -8px var(--spookyRed);
   }
   100% {
-    box-shadow: inset 0px 10px 0px -10px green;
+    box-shadow: inset 0px 10px 0px -10px var(--spookyRed);
   }
 }
