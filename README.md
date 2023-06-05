@@ -15,7 +15,7 @@ They are all designed, developed and programmed by myself.
 
 ## Built with
 
-![tool logos](images/Group10_LogoBigHor.png)
+![tool logos](images/Group10_logoBigHor.png)
 
 ---
 
