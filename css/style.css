@@ -174,7 +174,8 @@ section {
   border-radius: 60%;
 }
 
-.sectionHeader h1 {
+.sectionHeader h2 {
+  font-size: 1.8rem;
   font-family: "customFont", sans-serif;
   letter-spacing: 8px;
   margin: 30px;
