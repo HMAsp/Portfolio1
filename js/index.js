@@ -111,3 +111,31 @@ form.addEventListener("input", function () {
     sendBtn.style.boxShadow = "0px 0px 25px 5px var(--spookyRed)";
   }
 });
+
+// MODULE CREATER
+const images = document.querySelectorAll(".portfolioImg");
+let page = 0;
+function moduleBuilder() {
+  for (let i = 0; i < images.length; i++) {
+    const image = images[i];
+    image.addEventListener("click", function () {
+      const container = document.querySelector(".projectContainer");
+      const dialog = document.createElement("dialog");
+      dialog.classList.add("portModal");
+      dialog.style.display = "block";
+      container.append(dialog);
+      dialog.append(image.cloneNode(true));
+
+      document.addEventListener("click", function (event) {
+        if (
+          !container.contains(event.target) &&
+          !image.contains(event.target)
+        ) {
+          dialog.remove();
+        }
+      });
+    });
+  }
+}
+
+moduleBuilder();
