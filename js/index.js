@@ -114,21 +114,23 @@ form.addEventListener("input", function () {
 
 // MODULE CREATER
 const images = document.querySelectorAll(".portfolioImg");
+const container = document.querySelector(".projectContainer");
+const dialog = document.createElement("dialog");
 function modalBuilder() {
   for (let i = 0; i < images.length; i++) {
     const image = images[i];
+    const imageClone = image.cloneNode(true);
     image.addEventListener("click", function () {
-      const container = document.querySelector(".projectContainer");
-      const dialog = document.createElement("dialog");
+      dialog.remove();
       dialog.classList.add("portModal");
       dialog.style.display = "block";
       container.append(dialog);
-      dialog.append(image.cloneNode(true));
+      dialog.append(imageClone);
 
       document.addEventListener("click", function (event) {
         if (
           !container.contains(event.target) &&
-          !image.contains(event.target)
+          !imageClone.contains(event.target)
         ) {
           dialog.remove();
         }
@@ -136,5 +138,4 @@ function modalBuilder() {
     });
   }
 }
-
 modalBuilder();
