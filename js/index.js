@@ -115,12 +115,12 @@ form.addEventListener("input", function () {
 // MODULE CREATER
 const images = document.querySelectorAll(".portfolioImg");
 const container = document.querySelector(".projectContainer");
-const dialog = document.createElement("dialog");
 function modalBuilder() {
   for (let i = 0; i < images.length; i++) {
     const image = images[i];
     const imageClone = image.cloneNode(true);
     image.addEventListener("click", function () {
+      const dialog = document.createElement("dialog");
       dialog.classList.add("portModal");
       dialog.style.display = "block";
       container.append(dialog);
