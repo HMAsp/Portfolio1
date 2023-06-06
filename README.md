@@ -51,8 +51,9 @@ As these are all school projects I would appreciate if you would open a pull req
 
 ## Contact
 
-If you want to reach out to me please feel free to send me a message on either Twitter or LinkedIn.
+If you want to get in contact with me you can use either of the following:
+* Email: mailspooky@yahoo.com
+* [Twitter](https://twitter.com/HansMarAnd)
+* [LinkedIn](https://www.linkedin.com/in/hma1982/)
 
-[Twitter](https://twitter.com/HansMarAnd)
-
-[LinkedIn](https://www.linkedin.com/in/hma1982/)
+Or use the contact form on the portfolio page!
