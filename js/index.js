@@ -121,7 +121,6 @@ function modalBuilder() {
     const image = images[i];
     const imageClone = image.cloneNode(true);
     image.addEventListener("click", function () {
-      dialog.remove();
       dialog.classList.add("portModal");
       dialog.style.display = "block";
       container.append(dialog);
