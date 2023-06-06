@@ -114,8 +114,7 @@ form.addEventListener("input", function () {
 
 // MODULE CREATER
 const images = document.querySelectorAll(".portfolioImg");
-let page = 0;
-function moduleBuilder() {
+function modalBuilder() {
   for (let i = 0; i < images.length; i++) {
     const image = images[i];
     image.addEventListener("click", function () {
@@ -138,4 +137,4 @@ function moduleBuilder() {
   }
 }
 
-moduleBuilder();
+modalBuilder();
