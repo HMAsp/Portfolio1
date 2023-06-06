@@ -70,7 +70,6 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
   margin: auto;
   gap: 30px;
   animation: scale 0.4s ease-in-out;
@@ -278,6 +277,7 @@ section {
 
 .projectContainer div img {
   width: 100%;
+  box-shadow: 0px 2px 10px black;
 }
 
 .spookyBanner {
