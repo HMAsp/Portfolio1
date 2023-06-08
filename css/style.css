@@ -3,7 +3,7 @@
   --text: rgba(255, 255, 255, 1);
   --black: rgba(0, 0, 0, 1);
   --gray: rgba(220, 220, 220, 1);
-  --spookyRed: rgba(104, 2, 2, 1);
+  --spookyRed: rgba(199, 23, 30, 1);
   --lightFont: 300;
   --regularFont: 400;
   --boldFont: 700;
@@ -208,6 +208,9 @@ section {
 
 .myPortf {
   text-align: center;
+  font-family: "customFont";
+  letter-spacing: 4px;
+  text-shadow: 0px 0px 5px var(--black), 4px 0px 20px var(--spookyRed);
 }
 
 .intro p {
@@ -224,8 +227,7 @@ section {
   text-align: center;
   text-transform: uppercase;
   border: none;
-  box-shadow: 0px 0px 25px red;
-  /* margin: auto; */
+  box-shadow: 0px 0px 25px var(--spookyRed);
 }
 
 .cta:hover {
@@ -239,18 +241,31 @@ section {
   flex-wrap: wrap;
 }
 
+.skillBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto 100px auto;
+}
+
+.skillBox h2 {
+  text-align: center;
+  font-family: "customFont";
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  padding: 15px;
+  font-size: 1.3rem;
+}
+
 .logoImgRack {
   display: flex;
   width: 100%;
-  justify-content: center;
-  max-width: 450px;
-  margin: 100px auto 100px auto;
-  gap: 10px;
-}
-
-.logoImgRack img {
-  /* width: 100%; */
-  margin: auto;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  max-width: 540%;
+  /* margin: 100px auto 100px auto; */
+  gap: 35px;
 }
 
 /* PORTFOLIO */
@@ -416,11 +431,9 @@ footer {
   padding: 10px 20px;
   text-transform: uppercase;
   border: none;
-  /* box-shadow: 0px 0px 25px red; */
 }
 
 .formCta:hover {
-  /* box-shadow: 0px 0px 25px greenyellow; */
   cursor: pointer;
 }
 
