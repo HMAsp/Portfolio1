@@ -20,7 +20,7 @@ My portfolio page was made to document and display my school projects. It will b
 
 ## Getting started
 
-This is my personal portfolio. Files can be found on [Github](https://github.com/HMAsp/Portfolio1)
+This is my personal portfolio. Files can be found on [Github](https://github.com/Spookyrumble/Portfolio1)
 
 ---
 
@@ -35,6 +35,6 @@ If you want to get in contact with me you can use either of the following:
 - mailspooky@yahoo.com
 - [Twitter](https://twitter.com/HansMarAnd)
 - [LinkedIn](https://www.linkedin.com/in/hma1982/)
-- [Github](https://github.com/HMAsp)
+- [Github](https://github.com/Spookyrumble)
 
 Or just use the contact form on the portfolio page!
