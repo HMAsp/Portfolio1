@@ -380,6 +380,11 @@ footer {
   max-width: 460px;
 }
 
+.socialsList li {
+  line-height: 2.5rem;
+  text-decoration: none;
+}
+
 .contactFormCont {
   max-width: 450px;
   flex: 1;
