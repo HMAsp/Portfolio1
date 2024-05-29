@@ -1,9 +1,9 @@
-import { postFormData } from "./utilities.js";
-import { showSuccessDialog } from "./utilities.js";
-import { formErrorHander } from "./utilities.js";
-import { validateForm } from "./utilities.js";
-formErrorHander();
-validateForm();
+// import { postFormData } from "./utilities.js";
+// import { showSuccessDialog } from "./utilities.js";
+// // import { formErrorHander } from "./utilities.js";
+// import { validateForm } from "./utilities.js";
+// // formErrorHander();
+// // validateForm();
 
 // NAV MENU BUTTON HANDLERS
 const scrollPort = document.querySelector("#portF");
@@ -22,10 +22,10 @@ about.addEventListener("click", function () {
   dialogMenu.classList.toggle("hide");
 });
 
-const contact = document.querySelector("#contact");
-contact.addEventListener("click", function () {
-  const contact = document.querySelector(".contact");
-  contact.scrollIntoView({ behavior: "smooth" });
+const connect = document.querySelector("#connect");
+connect.addEventListener("click", function () {
+  const connect = document.querySelector(".connect");
+  connect.scrollIntoView({ behavior: "smooth" });
   dialogMenu.classList.toggle("show");
   dialogMenu.classList.toggle("hide");
 });
@@ -79,10 +79,10 @@ IndexAbout.addEventListener("click", function () {
   about.scrollIntoView({ behavior: "smooth" });
 });
 
-const IndexContact = document.querySelector("#IndexContact");
-IndexContact.addEventListener("click", function () {
-  const contact = document.querySelector(".contact");
-  contact.scrollIntoView({ behavior: "smooth" });
+const Indexconnect = document.querySelector("#Indexconnect");
+Indexconnect.addEventListener("click", function () {
+  const connect = document.querySelector(".connect");
+  connect.scrollIntoView({ behavior: "smooth" });
 });
 
 const spookyLogoHome = document.querySelector("#spookyScrollHome");

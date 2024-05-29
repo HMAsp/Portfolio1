@@ -28,13 +28,13 @@ This is my personal portfolio. Files can be found on [Github](https://github.com
 
 As this a personal portfolio I would appreciate if you would open a pull request so the code can be reviewed if you want to play around with it.
 
-## Contact
+## connect
 
-If you want to get in contact with me you can use either of the following:
+If you want to get in connect with me you can use either of the following:
 
 - mailspooky@yahoo.com
 - [Twitter](https://twitter.com/HansMarAnd)
 - [LinkedIn](https://www.linkedin.com/in/hma1982/)
 - [Github](https://github.com/Spookyrumble)
 
-Or just use the contact form on the portfolio page!
+Or just use the connect form on the portfolio page!
